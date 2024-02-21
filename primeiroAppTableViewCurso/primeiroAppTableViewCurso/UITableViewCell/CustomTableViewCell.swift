@@ -22,9 +22,11 @@ class CustomTableViewCell: UITableViewCell {
 // MARK: Inicializando class passando uma string para elemento TitleLabel
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-        TitleLabel.text = "Jeff Alves"
        
+    }
+// MARK: Criando funcao passando valor 
+    func setupCell(title: String) {
+        TitleLabel.text = title
     }
     
 }

@@ -8,6 +8,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var listaName: [String] = ["Jefferson","Daiany","Davi","Arthur","Théo"]
 
     @IBOutlet var tableView: UITableView!
     
@@ -29,13 +31,25 @@ class ViewController: UIViewController {
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 80
+        return listaName.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-// MARK: criando uma constante para passar Identifier "as?" serve para informa que a constante é do tipo CustomTableViewCell
+// MARK: criando uma constante para passar Identifier "as?" serve para informa que a constante é agora é do tipo CustomTableViewCell tambem
         let cell = tableView.dequeueReusableCell(withIdentifier: CustomTableViewCell.indentifier, for: indexPath) as? CustomTableViewCell
+        
+        cell?.setupCell(title: listaName[indexPath.row])
         
         return cell ?? UITableViewCell()
     }
+    
+//MARK: capturando item da lista que foi selecionado
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("O nome selecionado foi: \(listaName[indexPath.row])")
+    }
+//MARK: aumentando espesura da celula para 120
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 120
+    }
+
 }
