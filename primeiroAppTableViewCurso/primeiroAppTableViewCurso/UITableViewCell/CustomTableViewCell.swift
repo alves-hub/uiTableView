@@ -9,6 +9,7 @@ import UIKit
 
 class CustomTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var brandImageView: UIImageView!
     @IBOutlet weak var TitleLabel: UILabel!
     
 // MARK: criando uma identificacao do tipo constante estatica para parar chib
@@ -25,8 +26,9 @@ class CustomTableViewCell: UITableViewCell {
        
     }
 // MARK: Criando funcao passando valor 
-    func setupCell(title: String) {
-        TitleLabel.text = title
+    func setupCell(data: car) {
+        TitleLabel.text = data.brand
+        brandImageView.image = data.brandImage
     }
     
 }

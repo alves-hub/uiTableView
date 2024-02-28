@@ -23,15 +23,23 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cy7-bP-Zd1">
+                        <rect key="frame" x="15.999999999999996" y="4" width="58.666666666666657" height="38"/>
+                    </imageView>
                 </subviews>
                 <constraints>
                     <constraint firstItem="aRh-yQ-2yF" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Cam-iG-pVo"/>
+                    <constraint firstAttribute="bottom" secondItem="cy7-bP-Zd1" secondAttribute="bottom" constant="5" id="DLh-Di-tyN"/>
+                    <constraint firstItem="cy7-bP-Zd1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="cQ1-XZ-2SM"/>
                     <constraint firstItem="aRh-yQ-2yF" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="j0p-iP-gX6"/>
+                    <constraint firstItem="cy7-bP-Zd1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="kmF-hE-0Ws"/>
+                    <constraint firstItem="aRh-yQ-2yF" firstAttribute="leading" secondItem="cy7-bP-Zd1" secondAttribute="trailing" constant="44.670000000000002" id="lJr-sm-Boe"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="TitleLabel" destination="aRh-yQ-2yF" id="c7f-dZ-BOk"/>
+                <outlet property="brandImageView" destination="cy7-bP-Zd1" id="gtQ-Zz-66P"/>
             </connections>
             <point key="canvasLocation" x="100" y="-12.323943661971832"/>
         </tableViewCell>

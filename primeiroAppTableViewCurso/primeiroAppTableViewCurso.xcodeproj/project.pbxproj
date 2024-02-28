@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E6D0A2A2B8EE23400BA955B /* car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6D0A292B8EE23400BA955B /* car.swift */; };
 		7EDDAFDA2B7E900A00F1CE5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDDAFD92B7E900A00F1CE5B /* AppDelegate.swift */; };
 		7EDDAFDC2B7E900A00F1CE5B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDDAFDB2B7E900A00F1CE5B /* SceneDelegate.swift */; };
 		7EDDAFDE2B7E900A00F1CE5B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDDAFDD2B7E900A00F1CE5B /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7E6D0A292B8EE23400BA955B /* car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = car.swift; sourceTree = "<group>"; };
 		7EDDAFD62B7E900A00F1CE5B /* primeiroAppTableViewCurso.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = primeiroAppTableViewCurso.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EDDAFD92B7E900A00F1CE5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7EDDAFDB2B7E900A00F1CE5B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7E6D0A282B8EE1A700BA955B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7E6D0A292B8EE23400BA955B /* car.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		7EDDAFCD2B7E900A00F1CE5B = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +70,7 @@
 		7EDDAFD82B7E900A00F1CE5B /* primeiroAppTableViewCurso */ = {
 			isa = PBXGroup;
 			children = (
+				7E6D0A282B8EE1A700BA955B /* Model */,
 				7EDDAFED2B7EB1D500F1CE5B /* UITableViewCell */,
 				7EDDAFD92B7E900A00F1CE5B /* AppDelegate.swift */,
 				7EDDAFDB2B7E900A00F1CE5B /* SceneDelegate.swift */,
@@ -153,6 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E6D0A2A2B8EE23400BA955B /* car.swift in Sources */,
 				7EDDAFDE2B7E900A00F1CE5B /* ViewController.swift in Sources */,
 				7EDDAFDA2B7E900A00F1CE5B /* AppDelegate.swift in Sources */,
 				7EDDAFF02B7EB27400F1CE5B /* CustomTableViewCell.swift in Sources */,
